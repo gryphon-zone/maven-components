@@ -31,13 +31,6 @@
     <description>Toolbox of useful Maven libraries/components</description>
     <url>https://gryphon-zone.github.io/maven-components</url>
 
-    <licenses>
-        <license>
-            <name>The Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-
     <modules>
         <module>checkstyle</module>
         <module>version-comparison</module>
@@ -49,6 +42,13 @@
         <tag>HEAD</tag>
         <url>https://github.com/gryphon-zone/maven-components</url>
     </scm>
+
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <url>scm:git:git@github.com:gryphon-zone/maven-components.git</url>
+        </site>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>

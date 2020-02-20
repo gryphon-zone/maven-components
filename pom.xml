@@ -62,4 +62,16 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <topSiteURL>scm:git:git@github.com:gryphon-zone/maven-components.git</topSiteURL>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

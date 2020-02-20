@@ -27,5 +27,24 @@
     <name>${project.artifactId}</name>
     <description>Custom rules for comparing maven versions, for use by the versions-maven-plugin</description>
 
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <!-- this setting doesn't seem to support interpolation, so it must be hardcoded -->
+            <url>scm:git:git@github.com:gryphon-zone/maven-components.git/maven-components-version-comparison/</url>
+        </site>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <topSiteURL>${project.parent.scm.developerConnection}</topSiteURL>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

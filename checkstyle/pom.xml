@@ -27,14 +27,6 @@
     <name>${project.artifactId}</name>
     <description>Files used with the Maven Checkstyle Plugin</description>
 
-    <distributionManagement>
-        <site>
-            <id>gh-pages</id>
-            <!-- this setting doesn't seem to support interpolation, so it must be hardcoded -->
-            <url>scm:git:git@github.com:gryphon-zone/maven-components.git/maven-components-checkstyle/</url>
-        </site>
-    </distributionManagement>
-
     <build>
         <plugins>
             <plugin>

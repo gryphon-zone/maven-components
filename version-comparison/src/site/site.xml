@@ -17,7 +17,6 @@
 
     <body>
         <breadcrumbs>
-            <item name="${project.parent.artifactId}" href="${project.parent.url}"/>
             <item name="${project.artifactId}" href="${project.url}"/>
         </breadcrumbs>
     </body>

@@ -21,7 +21,10 @@
 <!-- https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml -->
 <suppressions>
 
-    <!--  Google's style guide says indentation should be 2 spaces, but Gryphon Zone uses 4 -->
+    <!--  Google's style guide uses 2 spaces for indentation, Gryphon Zone uses 4 -->
     <suppress checks="Indentation"/>
+
+    <!-- Google's style guide limits lines to 100 characters, Gryphon Zone does not -->
+    <suppress checks="LineLength"/>
 
 </suppressions>
